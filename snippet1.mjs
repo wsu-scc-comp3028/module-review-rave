@@ -1,10 +1,10 @@
 const fs = require('fs');
-
-function readfile(filepath) {
+// Asynchronously reads a file and logs its content to the console
+function readAccountFile(filepath) {
     fs.readFile(filepath, 'utf8', (err, data) => {
         if (err) throw err; 
         console.log(data); 
     });
 }
 
-readfile('./example.txt');
+readAccountFile('./example.txt');
