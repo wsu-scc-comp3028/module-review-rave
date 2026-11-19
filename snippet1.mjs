@@ -3,7 +3,7 @@ const fs = require('fs');
 function readAccountFile(filepath) {
     fs.readFile(filepath, 'utf8', (err, data) => {
         if (err) throw err; 
-        console.log(data); 
+        console.log(data); // Log the content of the file to the console
     });
 }
 
